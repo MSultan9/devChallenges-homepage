@@ -1,0 +1,483 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins';
+    font-weight: 500;
+    color: #333333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 52px;
+    margin-bottom: 44px;
+}
+
+header h1 {
+    font-family: 'Heebo';
+    font-weight: 800;
+    font-size: 36px;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 24px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.max-high {
+    max-width: 886px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    font-size: 18px;
+    color: #2D9CDB;
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: 48px;
+    max-width: 550px;
+    margin-bottom: 42px;
+}
+
+.image-container {
+    margin: 0 52px 42px;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 18px;
+}
+
+.max-highest {
+    max-width: 366px;
+}
+
+.max-highest p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #4F4F4F;
+    margin-bottom: 42px;
+}
+
+.email-input label {
+    font-size: 14px;
+    color: #828282;
+    margin-bottom: 8px;
+    display: inline-block
+}
+
+.email-input div {
+    display: flex;
+    background: #F2F2F2;
+    border-radius: 12px;
+    padding: 4px;
+}
+
+.email-input input {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    flex-grow: 1;
+    width: 100%;
+    color: #BDBDBD;
+    padding: 10px 16px;
+}
+
+.email-input button {
+    padding: 11px 27px;
+    font-size: 18px;
+    background: #2D9CDB;
+    border-radius: 12px;
+    color: #F2F2F2;
+
+}
+
+#services {
+    margin: 200px auto;
+    max-width: 1110px;
+
+    .section-title {
+        font-size: 36px;
+        max-width: 350px;
+        margin-bottom: 42px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+
+        .card {
+            padding: 46px 34px;
+            border-radius: 24px;
+            cursor: pointer;
+            transition: all 0.4s;
+
+            .card-icon {
+                width: 67px;
+                height: 67px;
+                background: #2D9CDB;
+                border-radius: 16px;
+                margin-bottom: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .material-symbols-outlined {
+                    color: white;
+                    font-size: 27px;
+                }
+            }
+
+            .card-title {
+                font-weight: 700;
+                font-size: 24px;
+                margin-bottom: 24px;
+            }
+
+            .card-text {
+                color: #4F4F4F;
+                margin-bottom: 30px;
+            }
+
+            .card-button {
+                padding: 9px 13px;
+                background: #E0E0E0;
+                border-radius: 12px;
+                color: #828282;
+                font-size: 16px;
+                transition: all 0.4s;
+            }
+
+            &:hover {
+                background: #FFFFFF;
+                box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+
+                .card-button {
+                    background: #2D9CDB;
+                    color: white;
+                }
+            }
+
+            &:nth-child(2) {
+                .card-icon {
+                    background: #27AE60;
+                }
+            }
+
+            &:nth-child(3) {
+                .card-icon {
+                    background: #EB5757;
+                }
+            }
+        }
+    }
+}
+
+#works {
+    margin: 0 auto 200px;
+    max-width: 1110px;
+    position: relative;
+
+    .section-title {
+        font-size: 36px;
+        max-width: 380px;
+        margin-bottom: 12px;
+    }
+
+    .cards {
+        display: flex;
+        gap: 20px;
+        height: 800px;
+
+        .card {
+            flex: 1 1 50%;
+
+            &:first-child {
+                align-self: flex-end;
+            }
+        }
+
+        .card-img {
+            border-radius: 12px;
+            width: 100%;
+        }
+
+        .card-caption {
+            font-weight: 300;
+            font-size: 14px;
+            color: #828282;
+        }
+
+        .card-description {
+            font-size: 24px;
+        }
+    }
+
+    .link-wrapper {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        .link {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 16px;
+            font-size: 24px;
+            color: #2D9CDB;
+
+            .material-symbols-outlined {
+                color: #2D9CDB;
+            }
+        }
+    }
+}
+
+#team {
+    margin: 0 auto 200px;
+    max-width: 1110px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    .team-section {
+        max-width: 50%;
+
+        .section-subtitle {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #EB5757;
+        }
+
+        .section-title {
+            font-size: 36px;
+            margin-bottom: 14px;
+        }
+
+        .section-text {
+            color: #4F4F4F;
+            font-weight: 400;
+        }
+    }
+
+    .team-images {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        .img {
+            border-radius: 24px;
+
+            +.img {
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+#clients {
+    margin: 0 auto 200px;
+    max-width: 1110px;
+
+    .client-feedback {
+        font-size: 36px;
+        max-width: 940px;
+        margin-bottom: 36px;
+    }
+
+    .client {
+        display: flex;
+        gap: 30px;
+
+        .client-image {
+            border-radius: 12px;
+            width: 82px;
+            height: 82px;
+        }
+
+        .client-name {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .client-company {
+            font-size: 18px;
+            color: #828282;
+        }
+    }
+}
+
+footer {
+    background: #100E1D;
+    color: white;
+    padding: 42px 0 24px;
+
+    .footer-container {
+        max-width: 1110px;
+        margin: 0 auto 120px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .dev {
+        text-align: center;
+        color: #F2F2F2;
+    }
+}
+
+footer h1,
+footer .email-input label {
+    color: #F2F2F2;
+}
+
+footer nav ul {
+    flex-direction: column;
+}
+
+footer nav ul li {
+    color: white;
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        margin: 0;
+    }
+    header nav {
+        display: none;
+    }
+    .max-high {
+        padding: 0 40px;
+    }
+    .hero-text {
+        font-size: 12px;
+    }
+    .title {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+    .max-highest p {
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
+    .image-container {
+        margin: 0 10px 22px;
+    }
+    .email-input label {
+        font-size: 10px;
+    }
+
+    .email-input input, .email-input button {
+        font-size: 14px;
+    }
+    #services {
+        margin: 100px 0;
+        padding: 0 40px;
+        .section-title {
+            font-size: 24px;
+        }
+        .cards {
+            gap: 60px;
+            grid-template-columns: 1fr;
+            .card {
+                padding: 10px
+            }
+        }
+    }
+    #works {
+        padding: 0 10px;
+        margin-bottom: 100px;
+        .section-title {
+            font-size: 24px;
+            padding: 0 30px;
+            margin-bottom: 48px;
+        }
+        .cards {
+            height: auto;
+            flex-direction: column;
+            gap: 36px;
+            .card {
+                flex: 1 1 100%;
+                &:first-child {
+                    align-self: auto;
+                }
+                .card-caption {
+                    font-size: 12px;
+                }
+                .card-description {
+                    font-size: 18px;
+                }
+            }
+        }
+        .link-wrapper {
+            position: static;
+            margin-top: 16px;
+            .link {
+                font-size: 18px;
+            }
+        }
+    }
+    #team {
+        margin-bottom: 100px;
+        padding: 0 10px;
+        grid-template-columns: 1fr;
+        .team-section {
+            max-width: 90%;
+        }
+        .team-images div {
+            flex: 1 1 50%;
+            .img {
+                width: 100%;
+            }
+        }
+    }
+    #clients {
+        padding: 0 10px;
+        margin-bottom: 100px;
+        .client-feedback {
+            font-size: 24px;
+        }
+    }
+    footer .footer-container {
+        padding: 0 42px;
+        grid-template-columns: 1fr;
+        gap: 64px;
+    }
+}
